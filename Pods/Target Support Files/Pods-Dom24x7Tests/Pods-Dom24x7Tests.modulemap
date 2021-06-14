@@ -1,0 +1,6 @@
+framework module Pods_Dom24x7Tests {
+  umbrella header "Pods-Dom24x7Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

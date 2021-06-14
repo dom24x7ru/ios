@@ -1,0 +1,18 @@
+//
+//  InvitePersonObject.swift
+//  Dom24x7
+//
+//  Created by Alim Gershishev on 27.04.2021.
+//
+
+import Foundation
+
+struct InvitePersonObject: Codable {
+    
+    public var surname: String?
+    
+    public var name: String?
+    
+    public var midname: String?
+    
+}

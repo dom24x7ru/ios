@@ -18,10 +18,12 @@ class SocketHandler {
         client = ScClient(url: host, authToken: Preferences.getAuthToken())
         
         let onConnectError = { (client: ScClient, error: Error?) in
+            //print(error)
             client.connect()
         }
         
         let onDisconnect = { (client: ScClient, error: Error?) in
+            //print(error)
             client.connect()
         }
         

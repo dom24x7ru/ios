@@ -50,7 +50,7 @@ class TextFieldWithCounter: UIView, UITextFieldDelegate {
     
     private func viewDidLoad() {
         textField.setUnderlineColor(.darkGray, for: .normal)
-        textField.setUnderlineColor(Colors.accentColor, for: .editing)
+        textField.setUnderlineColor(.accentColor, for: .editing)
         
         textField.delegate = self
         prefixLabel.text = String()

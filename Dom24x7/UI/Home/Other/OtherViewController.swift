@@ -22,7 +22,7 @@ class OtherViewController: UIViewController, MDCAppBarNavigationControllerDelega
     // MARK: AppBarNavigationController
 
     func appBarNavigationController(_ navigationController: MDCAppBarNavigationController, willAdd appBarViewController: MDCAppBarViewController, asChildOf viewController: UIViewController) {
-        appBarViewController.headerView.backgroundColor = Colors.accentColor
+        appBarViewController.headerView.backgroundColor = .accentColor
         appBarViewController.navigationBar.inkColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.1)
         appBarViewController.navigationBar.tintColor = .white
         appBarViewController.navigationBar.titleTextColor = .white

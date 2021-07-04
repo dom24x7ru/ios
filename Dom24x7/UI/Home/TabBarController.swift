@@ -55,7 +55,7 @@ class TabBarController: UIViewController {
         chatsViewController.appBarController.pushViewController(chatsViewController, animated: false)
         otherViewController.appBarController.pushViewController(otherViewController, animated: false)
         
-        bottomNavBarController.navigationBar.barTintColor = Colors.accentColor
+        bottomNavBarController.navigationBar.barTintColor = .accentColor
         bottomNavBarController.navigationBar.selectedItemTintColor = .white
         bottomNavBarController.navigationBar.selectedItemTitleColor = .white
         bottomNavBarController.navigationBar.unselectedItemTintColor = .white

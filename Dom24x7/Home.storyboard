@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedPersonCell" rowHeight="122" id="ZUd-YC-BYs" customClass="FeedPersonCell" customModule="Dom24x7" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedPostCell" rowHeight="122" id="ZUd-YC-BYs" customClass="FeedPostCell" customModule="Dom24x7" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="122"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZUd-YC-BYs" id="bVm-Nm-ksU">
@@ -44,7 +44,7 @@
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Person" translatesAutoresizingMaskIntoConstraints="NO" id="eAk-E8-pQ6">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_News" translatesAutoresizingMaskIntoConstraints="NO" id="eAk-E8-pQ6">
                                             <rect key="frame" x="16" y="16" width="22" height="22"/>
                                             <color key="tintColor" name="AccentColor"/>
                                             <constraints>
@@ -80,6 +80,7 @@
                                 <connections>
                                     <outlet property="bodyLabel" destination="rud-32-74p" id="bMr-S2-6Gb"/>
                                     <outlet property="dateLabel" destination="hYp-1p-QId" id="gcN-Li-cGW"/>
+                                    <outlet property="iconImage" destination="eAk-E8-pQ6" id="9ke-F2-BgU"/>
                                     <outlet property="titleLabel" destination="ihf-Ix-1dM" id="qTo-HZ-hd1"/>
                                 </connections>
                             </tableViewCell>
@@ -157,7 +158,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Person" width="72" height="72"/>
+        <image name="Icon_News" width="72" height="72"/>
         <namedColor name="AccentColor">
             <color red="0.11400000005960464" green="0.37299999594688416" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

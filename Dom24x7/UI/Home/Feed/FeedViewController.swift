@@ -11,7 +11,6 @@ import MaterialComponents
 class FeedViewController: UITableViewController, MDCAppBarNavigationControllerDelegate {
     
     private let loadingBar = LoadingBar()
-    
     public var appBarController: MDCAppBarNavigationController!
     
     

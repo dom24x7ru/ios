@@ -13,4 +13,8 @@ extension Date {
         self.init(timeIntervalSince1970: Double(timestamp / 1000))
     }
     
+    func currentTimeMillis() -> Int64 {
+        return Int64(self.timeIntervalSince1970 * 1000)
+    }
+    
 }

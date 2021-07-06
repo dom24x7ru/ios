@@ -22,6 +22,8 @@ class Localization {
     /* text */
     public static var enterInviteCode: String!
     public static var invalidFormat: String!
+    public static var noMessagesHereYet: String!
+    public static var noTitle: String!
     public static var phoneNumbersMustBeIdentical: String!
     public static var retypeYourPhoneNumber: String!
     public static var smsCode: String!
@@ -29,7 +31,7 @@ class Localization {
     public static var yourPhoneNumber: String!
     
     /* array */
-    public static var monthSymbols: [String]!
+    public static var weekdaySymbols: [String]!
     
     
     public static func initialize() {
@@ -50,6 +52,8 @@ class Localization {
         /* text */
         enterInviteCode = "Введите код приглашения"
         invalidFormat = "Неверный формат"
+        noMessagesHereYet = "Здесь пока нет сообщений"
+        noTitle = "Без названия"
         phoneNumbersMustBeIdentical = "Номера телефона должны совпадать"
         retypeYourPhoneNumber = "Повторно ваш номер телефона"
         smsCode = "СМС код"
@@ -57,7 +61,7 @@ class Localization {
         yourPhoneNumber = "Ваш номер телефона"
         
         /* array */
-        monthSymbols = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"]
+        weekdaySymbols = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
     }
 
 }

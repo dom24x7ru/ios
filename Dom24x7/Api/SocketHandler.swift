@@ -87,6 +87,8 @@ class SocketHandler {
         client.onChannel(channelName: "flats", ack: { (channelName: String, response: AnyObject?) in
             if let objectAny = (response as! Dictionary<String, AnyObject>)["data"] {
                 ClientData.flats.data.append(JSONDecoder.decode(FlatObject.self, from: objectAny))
+            } else {
+                ClientData.setSections()
             }
         })
     }

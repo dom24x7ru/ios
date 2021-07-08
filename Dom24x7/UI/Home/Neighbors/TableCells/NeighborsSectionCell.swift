@@ -7,12 +7,12 @@
 
 import UIKit
 
-class NeighborsSectionsCell: UITableViewCell {
+class NeighborsSectionCell: UITableViewCell {
 
     @IBOutlet var sectionLabel: UILabel!
     @IBOutlet var floorsLabel: UILabel!
     @IBOutlet var flatsLabel: UILabel!
-    @IBOutlet var filledLabel: UILabel!
+    @IBOutlet var populatedLabel: UILabel!
     @IBOutlet var personsLabel: UILabel!
     
 }

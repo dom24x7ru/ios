@@ -17,7 +17,7 @@ struct SectionObject: Codable {
     
     public var flatMax: Int
     
-    public var flats: Int
+    public var flatsCount: Int
     
     public var populated: Int
     

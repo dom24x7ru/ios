@@ -43,6 +43,7 @@ class NeighborsViewController: UITableViewController, MDCAppBarNavigationControl
         let selectedCell = sender as! NeighborsSectionCell
         let floors = ClientData.sections.data[selectedCell.index]!.floors
         
+        destination.title = Localization.section + " " + String(selectedCell.index)
         destination.floors = floors
         destination.indexes = floors.keys.sorted()
     }

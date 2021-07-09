@@ -15,6 +15,8 @@ struct FloorObject: Codable {
     
     public var flatMax: Int
     
+    public var flatsCount: Int
+    
     public var populated: Int
     
     public var persons: Int

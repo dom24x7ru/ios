@@ -49,7 +49,7 @@ class ClientData {
                     
                     sections.data[item.section]!.floors[item.floor]!.flatMin = min(item.number, sections.data[item.section]!.floors[item.floor]!.flatMin)
                     sections.data[item.section]!.floors[item.floor]!.flatMax = max(item.number, sections.data[item.section]!.floors[item.floor]!.flatMax)
-                    sections.data[item.section]!.floors[item.floor]!.flatsCount = sections.data[item.section]!.flatMax - sections.data[item.section]!.flatMin + 1
+                    sections.data[item.section]!.floors[item.floor]!.flatsCount = sections.data[item.section]!.floors[item.floor]!.flatMax - sections.data[item.section]!.floors[item.floor]!.flatMin + 1
                     sections.data[item.section]!.floors[item.floor]!.populated += populated
                     sections.data[item.section]!.floors[item.floor]!.persons += persons
                 } else {

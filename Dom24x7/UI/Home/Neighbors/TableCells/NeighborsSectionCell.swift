@@ -9,6 +9,8 @@ import UIKit
 
 class NeighborsSectionCell: UITableViewCell {
 
+    public var index: Int = 0
+    
     @IBOutlet var sectionLabel: UILabel!
     @IBOutlet var floorsLabel: UILabel!
     @IBOutlet var flatsLabel: UILabel!

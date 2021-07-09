@@ -49,10 +49,11 @@ class ClientData {
                     
                     sections.data[item.section]!.floors[item.floor]!.flatMin = min(item.number, sections.data[item.section]!.floors[item.floor]!.flatMin)
                     sections.data[item.section]!.floors[item.floor]!.flatMax = max(item.number, sections.data[item.section]!.floors[item.floor]!.flatMax)
+                    sections.data[item.section]!.floors[item.floor]!.flatsCount = sections.data[item.section]!.flatMax - sections.data[item.section]!.flatMin + 1
                     sections.data[item.section]!.floors[item.floor]!.populated += populated
                     sections.data[item.section]!.floors[item.floor]!.persons += persons
                 } else {
-                    sections.data[item.section]!.floors[item.floor] = FloorObject(flats: [item], flatMin: item.number, flatMax: item.number, populated: populated, persons: persons)
+                    sections.data[item.section]!.floors[item.floor] = FloorObject(flats: [item], flatMin: item.number, flatMax: item.number, flatsCount: 1, populated: populated, persons: persons)
                 }
                 
                 sections.data[item.section]!.floorsCount = max(item.floor, sections.data[item.section]!.floorsCount)
@@ -62,7 +63,7 @@ class ClientData {
                 sections.data[item.section]!.populated += populated
                 sections.data[item.section]!.persons += persons
             } else {
-                let floor = [item.floor : FloorObject(flats: [item], flatMin: item.number, flatMax: item.number, populated: populated, persons: persons)]
+                let floor = [item.floor : FloorObject(flats: [item], flatMin: item.number, flatMax: item.number, flatsCount: 1, populated: populated, persons: persons)]
                 sections.data[item.section] = SectionObject(floors: floor, floorsCount: 1, flatMin: item.number, flatMax: item.number, flatsCount: 1, populated: populated, persons: persons)
             }
         }

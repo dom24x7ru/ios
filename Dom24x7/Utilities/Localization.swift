@@ -32,6 +32,7 @@ class Localization {
     
     /* text */
     public static var enterInviteCode: String!
+    public static var hiddenByUser: String!
     public static var invalidFormat: String!
     public static var noMessagesHereYet: String!
     public static var noTitle: String!
@@ -74,6 +75,7 @@ class Localization {
         
         /* text */
         enterInviteCode = "Введите код приглашения"
+        hiddenByUser = "Скрыто пользователем"
         invalidFormat = "Неверный формат"
         noMessagesHereYet = "Здесь пока нет сообщений"
         noTitle = "Без названия"

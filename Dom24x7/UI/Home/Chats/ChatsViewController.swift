@@ -49,10 +49,6 @@ class ChatsViewController: UITableViewController, MDCAppBarNavigationControllerD
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ClientData.imChannels.data.count
     }
-
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChatsConversationCell", for: indexPath) as! ChatsConversationCell

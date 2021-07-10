@@ -20,6 +20,7 @@
 		4715EA6E262B2A2700F5B80C /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4715EA6D262B2A2700F5B80C /* Localization.swift */; };
 		471B48E0263ADCAF008B86E1 /* FeedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471B48DF263ADCAF008B86E1 /* FeedPostCell.swift */; };
 		472A267F261714180043AABB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472A267E261714180043AABB /* Colors.swift */; };
+		4734D4242695AFA700D95B7C /* NeighborsSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734D4232695AFA700D95B7C /* NeighborsSectionCell.swift */; };
 		473EBB402677401500C710C7 /* FlatMinObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EBB3F2677401500C710C7 /* FlatMinObject.swift */; };
 		473EBB4B2677431C00C710C7 /* ScClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EBB4A2677431C00C710C7 /* ScClientExtension.swift */; };
 		473EBB502677474800C710C7 /* FaqObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EBB4F2677474800C710C7 /* FaqObject.swift */; };
@@ -40,6 +41,15 @@
 		473EBBAE26776B9E00C710C7 /* IMChannelLastMessageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EBBAD26776B9E00C710C7 /* IMChannelLastMessageObject.swift */; };
 		473EBBBA267773AC00C710C7 /* IMMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EBBB9267773AC00C710C7 /* IMMessage.swift */; };
 		473EBBBF2677741000C710C7 /* IMMessageChannelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EBBBE2677741000C710C7 /* IMMessageChannelObject.swift */; };
+		473F74232695CC5000A55B20 /* SectionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F74222695CC5000A55B20 /* SectionObject.swift */; };
+		473F74282695D39000A55B20 /* FloorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F74272695D39000A55B20 /* FloorObject.swift */; };
+		473F74332697478100A55B20 /* NeighborsFloorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F74322697478100A55B20 /* NeighborsFloorsViewController.swift */; };
+		473F744026983F9100A55B20 /* NeighborsFloorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F743F26983F9100A55B20 /* NeighborsFloorCell.swift */; };
+		473F744526985E0E00A55B20 /* NeighborsFlatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F744426985E0E00A55B20 /* NeighborsFlatsViewController.swift */; };
+		473F744A26985EAB00A55B20 /* NeighborsFlatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F744926985EAB00A55B20 /* NeighborsFlatCell.swift */; };
+		473F745226986CF900A55B20 /* NeighborsPersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F745126986CF900A55B20 /* NeighborsPersonCell.swift */; };
+		473F745A2699CD0700A55B20 /* NeighborsPersonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F74592699CD0700A55B20 /* NeighborsPersonsViewController.swift */; };
+		473F74622699DBFC00A55B20 /* FlatInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F74612699DBFC00A55B20 /* FlatInfoObject.swift */; };
 		47592FEC263868FC0029BA1B /* PostObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47592FEB263868FC0029BA1B /* PostObject.swift */; };
 		4759301026386C3B0029BA1B /* FlatObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759300F26386C3B0029BA1B /* FlatObject.swift */; };
 		4759301826386C4E0029BA1B /* ResidentOwnerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759301726386C4E0029BA1B /* ResidentOwnerObject.swift */; };
@@ -50,6 +60,7 @@
 		47683E632629B14100923701 /* UserRoleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47683E622629B14100923701 /* UserRoleObject.swift */; };
 		47683E682629B26A00923701 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47683E672629B26A00923701 /* Preferences.swift */; };
 		476C9B17264D47ED0090B6D9 /* InstructionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C9B16264D47ED0090B6D9 /* InstructionObject.swift */; };
+		476D15D9269A11A400F57522 /* BackgroundText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476D15D8269A11A400F57522 /* BackgroundText.swift */; };
 		477025FB262EE1FA001D14D9 /* JSONEncoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477025FA262EE1FA001D14D9 /* JSONEncoderExtension.swift */; };
 		47702603262EF869001D14D9 /* ThreadExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47702602262EF869001D14D9 /* ThreadExtension.swift */; };
 		478F38C5261235680024CC3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478F38C4261235680024CC3F /* AppDelegate.swift */; };
@@ -121,6 +132,7 @@
 		4715EA6D262B2A2700F5B80C /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		471B48DF263ADCAF008B86E1 /* FeedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostCell.swift; sourceTree = "<group>"; };
 		472A267E261714180043AABB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4734D4232695AFA700D95B7C /* NeighborsSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborsSectionCell.swift; sourceTree = "<group>"; };
 		4735094C2616277200AEE86C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/SignIn.storyboard; sourceTree = "<group>"; };
 		4735094D2616277200AEE86C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		473EBB3F2677401500C710C7 /* FlatMinObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMinObject.swift; sourceTree = "<group>"; };
@@ -143,6 +155,15 @@
 		473EBBAD26776B9E00C710C7 /* IMChannelLastMessageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMChannelLastMessageObject.swift; sourceTree = "<group>"; };
 		473EBBB9267773AC00C710C7 /* IMMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMMessage.swift; sourceTree = "<group>"; };
 		473EBBBE2677741000C710C7 /* IMMessageChannelObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMMessageChannelObject.swift; sourceTree = "<group>"; };
+		473F74222695CC5000A55B20 /* SectionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionObject.swift; sourceTree = "<group>"; };
+		473F74272695D39000A55B20 /* FloorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorObject.swift; sourceTree = "<group>"; };
+		473F74322697478100A55B20 /* NeighborsFloorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborsFloorsViewController.swift; sourceTree = "<group>"; };
+		473F743F26983F9100A55B20 /* NeighborsFloorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborsFloorCell.swift; sourceTree = "<group>"; };
+		473F744426985E0E00A55B20 /* NeighborsFlatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborsFlatsViewController.swift; sourceTree = "<group>"; };
+		473F744926985EAB00A55B20 /* NeighborsFlatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborsFlatCell.swift; sourceTree = "<group>"; };
+		473F745126986CF900A55B20 /* NeighborsPersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborsPersonCell.swift; sourceTree = "<group>"; };
+		473F74592699CD0700A55B20 /* NeighborsPersonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborsPersonsViewController.swift; sourceTree = "<group>"; };
+		473F74612699DBFC00A55B20 /* FlatInfoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatInfoObject.swift; sourceTree = "<group>"; };
 		47592FEB263868FC0029BA1B /* PostObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostObject.swift; sourceTree = "<group>"; };
 		4759300F26386C3B0029BA1B /* FlatObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatObject.swift; sourceTree = "<group>"; };
 		4759301726386C4E0029BA1B /* ResidentOwnerObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentOwnerObject.swift; sourceTree = "<group>"; };
@@ -153,6 +174,7 @@
 		47683E622629B14100923701 /* UserRoleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoleObject.swift; sourceTree = "<group>"; };
 		47683E672629B26A00923701 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		476C9B16264D47ED0090B6D9 /* InstructionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionObject.swift; sourceTree = "<group>"; };
+		476D15D8269A11A400F57522 /* BackgroundText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundText.swift; sourceTree = "<group>"; };
 		477025FA262EE1FA001D14D9 /* JSONEncoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoderExtension.swift; sourceTree = "<group>"; };
 		47702602262EF869001D14D9 /* ThreadExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadExtension.swift; sourceTree = "<group>"; };
 		478F38C1261235680024CC3F /* Dom24x7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dom24x7.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,12 +291,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4734D417269596DC00D95B7C /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				473F744926985EAB00A55B20 /* NeighborsFlatCell.swift */,
+				473F743F26983F9100A55B20 /* NeighborsFloorCell.swift */,
+				473F745126986CF900A55B20 /* NeighborsPersonCell.swift */,
+				4734D4232695AFA700D95B7C /* NeighborsSectionCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
 		47350951261628BB00AEE86C /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
 				4792532A2619B34A00386493 /* XIBs */,
-				479253302619B56B00386493 /* TextFieldWithCounter.swift */,
+				476D15D8269A11A400F57522 /* BackgroundText.swift */,
 				47D31C472691980400FFA253 /* LoadingBar.swift */,
+				479253302619B56B00386493 /* TextFieldWithCounter.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -315,10 +349,13 @@
 			children = (
 				473EBB3F2677401500C710C7 /* FlatMinObject.swift */,
 				4759300F26386C3B0029BA1B /* FlatObject.swift */,
+				473F74272695D39000A55B20 /* FloorObject.swift */,
 				47CDA7E92651499200CEB512 /* HouseCoordinatesObject.swift */,
 				47CDA7DF265148BB00CEB512 /* HouseExtraObject.swift */,
 				47CDA7E4265148DF00CEB512 /* HouseExtraSquareObject.swift */,
 				47CDA7DA265148A600CEB512 /* HouseObject.swift */,
+				473F74222695CC5000A55B20 /* SectionObject.swift */,
+				473F74612699DBFC00A55B20 /* FlatInfoObject.swift */,
 			);
 			path = Building;
 			sourceTree = "<group>";
@@ -506,6 +543,10 @@
 		47BB566B263AD77300A82F56 /* Neighbors */ = {
 			isa = PBXGroup;
 			children = (
+				4734D417269596DC00D95B7C /* TableCells */,
+				473F744426985E0E00A55B20 /* NeighborsFlatsViewController.swift */,
+				473F74322697478100A55B20 /* NeighborsFloorsViewController.swift */,
+				473F74592699CD0700A55B20 /* NeighborsPersonsViewController.swift */,
 				47117DE1262859600094A3B3 /* NeighborsViewController.swift */,
 			);
 			path = Neighbors;
@@ -784,8 +825,11 @@
 				4712694C263AECF60085D5C6 /* CGFloatExtension.swift in Sources */,
 				473EBB9C26776A8000C710C7 /* IMAnswerMessageObject.swift in Sources */,
 				473EBB792677553D00C710C7 /* PersonMinObject.swift in Sources */,
+				476D15D9269A11A400F57522 /* BackgroundText.swift in Sources */,
+				473F74232695CC5000A55B20 /* SectionObject.swift in Sources */,
 				47D31C4D2691990600FFA253 /* UIViewControllerExtension.swift in Sources */,
 				476282AC261B555200D6919A /* Global.swift in Sources */,
+				473F745A2699CD0700A55B20 /* NeighborsPersonsViewController.swift in Sources */,
 				473EBB89267766B800C710C7 /* VoteAnswerObject.swift in Sources */,
 				473EBBA126776AB900C710C7 /* IMMessageBodyObject.swift in Sources */,
 				478F38C9261235680024CC3F /* SignInViewController.swift in Sources */,
@@ -796,6 +840,9 @@
 				473EBB8E2677670500C710C7 /* VoteObject.swift in Sources */,
 				47EC85E226427D7D0029957B /* ResidentObject.swift in Sources */,
 				473EBB4B2677431C00C710C7 /* ScClientExtension.swift in Sources */,
+				473F74332697478100A55B20 /* NeighborsFloorsViewController.swift in Sources */,
+				473F744026983F9100A55B20 /* NeighborsFloorCell.swift in Sources */,
+				473F74622699DBFC00A55B20 /* FlatInfoObject.swift in Sources */,
 				47126937263AE0890085D5C6 /* DateHelper.swift in Sources */,
 				473EBBBF2677741000C710C7 /* IMMessageChannelObject.swift in Sources */,
 				47CDA7E0265148BB00CEB512 /* HouseExtraObject.swift in Sources */,
@@ -811,9 +858,12 @@
 				47CDA7DB265148A600CEB512 /* HouseObject.swift in Sources */,
 				473EBB9426776A2E00C710C7 /* IMHistoryItemObject.swift in Sources */,
 				47E19CA926185AEF00C34216 /* RegisterViewController.swift in Sources */,
+				473F745226986CF900A55B20 /* NeighborsPersonCell.swift in Sources */,
 				4712693F263AE0E60085D5C6 /* DateExtension.swift in Sources */,
+				4734D4242695AFA700D95B7C /* NeighborsSectionCell.swift in Sources */,
 				47DCE51626247808001FEE44 /* TabBarController.swift in Sources */,
 				47117DE2262859600094A3B3 /* NeighborsViewController.swift in Sources */,
+				473F744A26985EAB00A55B20 /* NeighborsFlatCell.swift in Sources */,
 				47702603262EF869001D14D9 /* ThreadExtension.swift in Sources */,
 				47B787A72621E1AB0040D84D /* SignInWithInviteObject.swift in Sources */,
 				473EBB842677666100C710C7 /* VoteQuestionObject.swift in Sources */,
@@ -839,6 +889,7 @@
 				473EBBAE26776B9E00C710C7 /* IMChannelLastMessageObject.swift in Sources */,
 				47E19CA12618552900C34216 /* SocketHandler.swift in Sources */,
 				473EBB672677535B00C710C7 /* RecommendationExtraObject.swift in Sources */,
+				473F74282695D39000A55B20 /* FloorObject.swift in Sources */,
 				476C9B17264D47ED0090B6D9 /* InstructionObject.swift in Sources */,
 				4791564E2622DE5F0008BF94 /* JSONDecoderExtension.swift in Sources */,
 				47CDA7E5265148DF00CEB512 /* HouseExtraSquareObject.swift in Sources */,
@@ -848,6 +899,7 @@
 				47D31C482691980400FFA253 /* LoadingBar.swift in Sources */,
 				479156532622E0350008BF94 /* ErrorObject.swift in Sources */,
 				47E075BE264D4766000B215D /* InstructionStepObject.swift in Sources */,
+				473F744526985E0E00A55B20 /* NeighborsFlatsViewController.swift in Sources */,
 				47683E632629B14100923701 /* UserRoleObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

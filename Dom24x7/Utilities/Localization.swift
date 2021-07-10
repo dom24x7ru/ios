@@ -28,6 +28,7 @@ class Localization {
     public static var signIn: String!
     public static var size: String!
     public static var submit: String!
+    public static var unknown: String!
     
     /* text */
     public static var enterInviteCode: String!
@@ -69,6 +70,7 @@ class Localization {
         signIn = "Войти"
         size = "Размер"
         submit = "Отправить"
+        unknown = "Неизвестно"
         
         /* text */
         enterInviteCode = "Введите код приглашения"

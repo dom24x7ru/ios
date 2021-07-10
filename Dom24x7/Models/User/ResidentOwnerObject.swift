@@ -19,4 +19,8 @@ struct ResidentOwnerObject: Codable {
     
     public var deleted: Bool
     
+    public var mobile: String?
+    
+    public var telegram: String?
+    
 }

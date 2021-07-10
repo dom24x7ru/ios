@@ -189,6 +189,24 @@ class SocketHandler {
     
     // MARK: Socket APIs
     
+    public static func flatInfo(flatNumber: Int, then handler: @escaping ResultHandler) {
+        let data = FlatInfoObject(flatNumber: flatNumber)
+
+        client.emitAck(eventName: "flat.info", data: data as AnyObject, ack: { (_: String, errorObj: AnyObject?, dataObj: AnyObject?) in
+            if errorObj != nil && !(errorObj is NSNull) {
+                let error = JSONDecoder.decode(ErrorObject.self, from: errorObj)
+                
+                handler(.failure(error))
+            } else if dataObj != nil {
+                let response = JSONDecoder.decode([ResidentOwnerObject].self, from: dataObj)
+                
+                handler(.success(response))
+            } else {
+                handler(.failure(ErrorObject(code: "0", message: Localization.unknownError)))
+            }
+        })
+    }
+    
     public static func register(phoneNumber: String, invite: String, then handler: @escaping ResultHandler) {
         let data = SignInWithInviteObject(mobile: "7" + phoneNumber, invite: invite)
 

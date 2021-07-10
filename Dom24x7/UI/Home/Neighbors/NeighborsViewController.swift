@@ -63,10 +63,6 @@ class NeighborsViewController: UITableViewController, MDCAppBarNavigationControl
         return indexes.count
     }
 
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 158
-    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NeighborsSectionCell", for: indexPath) as! NeighborsSectionCell
         let sectionNumber = indexes[indexPath.row]

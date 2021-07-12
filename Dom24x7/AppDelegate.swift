@@ -18,10 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Localization.initialize()
         SocketHandler.initialize()
         
-        Thread.runOnBackgroundThread {
-            SocketHandler.subscribeToAll()
-        }
-        
         if SocketHandler.isAuthorized() {
             window!.rootViewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController()
         }

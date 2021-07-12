@@ -16,6 +16,10 @@ class TabBarController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Thread.runOnBackgroundThread {
+            SocketHandler.subscribeToAll()
+        }
+        
         initializeComponents()
         setNeedsStatusBarAppearanceUpdate()
     }

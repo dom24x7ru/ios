@@ -24,7 +24,7 @@ class NeighborsFlatsViewController: UITableViewController {
         let selectedCell = sender as! NeighborsFlatCell
         let flat = flats[selectedCell.index]
         
-        destination.title = title! + ", " + Localization.flat + " №" + String(flat.number)
+        destination.title = Localization.flat + " №" + String(flat.number)
         
         destination.loadResidents(in: flat.number)
     }

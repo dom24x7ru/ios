@@ -133,8 +133,6 @@
 		471B48DF263ADCAF008B86E1 /* FeedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostCell.swift; sourceTree = "<group>"; };
 		472A267E261714180043AABB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4734D4232695AFA700D95B7C /* NeighborsSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborsSectionCell.swift; sourceTree = "<group>"; };
-		4735094C2616277200AEE86C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/SignIn.storyboard; sourceTree = "<group>"; };
-		4735094D2616277200AEE86C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		473EBB3F2677401500C710C7 /* FlatMinObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMinObject.swift; sourceTree = "<group>"; };
 		473EBB4A2677431C00C710C7 /* ScClientExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScClientExtension.swift; sourceTree = "<group>"; };
 		473EBB4F2677474800C710C7 /* FaqObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqObject.swift; sourceTree = "<group>"; };
@@ -194,6 +192,8 @@
 		479156572622E05E0008BF94 /* StatusObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusObject.swift; sourceTree = "<group>"; };
 		4792532B2619B3A200386493 /* TextFieldWithCounter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldWithCounter.xib; sourceTree = "<group>"; };
 		479253302619B56B00386493 /* TextFieldWithCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithCounter.swift; sourceTree = "<group>"; };
+		47A722DD269DD1B00021163A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47A722DE269DD1B00021163A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignIn.storyboard; sourceTree = "<group>"; };
 		47B7877E2621C1FF0040D84D /* ConfirmSmsCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSmsCodeViewController.swift; sourceTree = "<group>"; };
 		47B787892621CC7D0040D84D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		47B787962621D6520040D84D /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
@@ -685,6 +685,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 478F38B8261235680024CC3F;
 			productRefGroup = 478F38C2261235680024CC3F /* Products */;
@@ -939,7 +940,7 @@
 		478F38CA261235680024CC3F /* SignIn.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4735094C2616277200AEE86C /* en */,
+				47A722DE269DD1B00021163A /* Base */,
 			);
 			name = SignIn.storyboard;
 			sourceTree = "<group>";
@@ -947,7 +948,7 @@
 		478F38D2261235690024CC3F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4735094D2616277200AEE86C /* en */,
+				47A722DD269DD1B00021163A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

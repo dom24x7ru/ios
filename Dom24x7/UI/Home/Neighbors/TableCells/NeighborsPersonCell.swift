@@ -35,9 +35,9 @@ class NeighborsPersonCell: UITableViewCell {
     }
     
     public func setName(_ name: String?, surname: String?, midname: String?) {
-        if name == nil {
+        if name == nil || name == "" {
             nameLabel.text = Localization.hiddenByUser
-        } else if surname == nil {
+        } else if surname == nil || surname == "" {
             nameLabel.text = name
         } else {
             nameLabel.text = surname! + " " + name! + " " + midname!

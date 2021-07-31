@@ -161,8 +161,8 @@ class SocketHandler {
     }
     
     private static func subscribeToRecomendations() {
-        client.subscribe(channelName: "recomendations")
-        client.onChannel(channelName: "recomendations", ack: { (channelName: String, response: AnyObject?) in
+        client.subscribe(channelName: "recommendations")
+        client.onChannel(channelName: "recommendations", ack: { (channelName: String, response: AnyObject?) in
             if let objectAny = (response as! Dictionary<String, AnyObject>)["data"] {
                 ClientData.recommendations.data.append(JSONDecoder.decode(RecomendationObject.self, from: objectAny))
             }

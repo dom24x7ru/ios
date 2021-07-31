@@ -94,10 +94,9 @@ class OtherViewController: UITableViewController, MDCAppBarNavigationControllerD
         tableView.deselectRow(at: indexPath, animated: true)
         
         if tableView.cellForRow(at: indexPath)!.reuseIdentifier == "OtherLogoutCell" {
-            let viewController = UIStoryboard(name: "SignIn", bundle: nil).instantiateInitialViewController()!
-            
             Preferences.clearAll()
-            present(viewController, animated: true, completion: nil)
+            
+            UIApplication.shared.keyWindow!.rootViewController = UIStoryboard(name: "SignIn", bundle: nil).instantiateInitialViewController()
         }
     }
     

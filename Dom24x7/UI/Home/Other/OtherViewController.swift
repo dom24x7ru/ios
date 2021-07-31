@@ -174,7 +174,6 @@ class OtherViewController: UITableViewController, MDCAppBarNavigationControllerD
     private func getInvitationsCell(at indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OtherInvitationsCell", for: indexPath) as! OtherCell
 
-        cell.isUserInteractionEnabled = ClientData.invites.data.count > 0
         cell.titleLabel.text = Localization.invitations
         
         return cell

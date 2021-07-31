@@ -10,24 +10,33 @@ import Foundation
 class Localization {
     
     /* label */
+    public static var available: String!
     public static var chats: String!
+    public static var documents: String!
+    public static var faq: String!
     public static var feed: String!
     public static var flat: String!
+    public static var flatShort: String!
     public static var flats: String!
     public static var floor: String!
     public static var floors: String!
+    public static var instructions: String!
+    public static var invitations: String!
+    public static var logout: String!
     public static var neighbors: String!
     public static var of: String!
     public static var or: String!
     public static var other: String!
     public static var persons: String!
     public static var populated: String!
-    public static var rooms: String!
+    public static var recommendations: String!
     public static var register: String!
+    public static var rooms: String!
     public static var section: String!
     public static var signIn: String!
     public static var size: String!
     public static var submit: String!
+    public static var voting: String!
     public static var unknown: String!
     
     /* text */
@@ -36,6 +45,7 @@ class Localization {
     public static var invalidFormat: String!
     public static var noMessagesHereYet: String!
     public static var noTitle: String!
+    public static var notSpecified: String!
     public static var phoneNumbersMustBeIdentical: String!
     public static var retypeYourPhoneNumber: String!
     public static var smsCode: String!
@@ -53,24 +63,33 @@ class Localization {
     
     private static func setRussian() {
         /* label */
+        available = "Доступно"
         chats = "Чаты"
+        documents = "Документы"
+        faq = "Вопросы-Ответы"
         feed = "Лента"
         flat = "Квартира"
+        flatShort = "Кв."
         flats = "Квартиры"
         floor = "Этаж"
         floors = "Этажей"
+        instructions = "Инструкции"
+        invitations = "Приглашения"
+        logout = "Выйти"
         neighbors = "Соседи"
         of = "из"
         or = "или"
         other = "Прочее"
         persons = "Жильцов"
         populated = "Заселено"
-        rooms = "Комнат"
+        recommendations = "Рекомендации"
         register = "Зарегистрироваться"
+        rooms = "Комнат"
         section = "Подъезд"
         signIn = "Войти"
         size = "Размер"
         submit = "Отправить"
+        voting = "Голосование"
         unknown = "Неизвестно"
         
         /* text */
@@ -79,6 +98,7 @@ class Localization {
         invalidFormat = "Неверный формат"
         noMessagesHereYet = "Здесь пока нет сообщений"
         noTitle = "Без названия"
+        notSpecified = "Не указан"
         phoneNumbersMustBeIdentical = "Номера телефона должны совпадать"
         retypeYourPhoneNumber = "Повторно ваш номер телефона"
         smsCode = "СМС код"

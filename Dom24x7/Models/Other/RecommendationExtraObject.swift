@@ -9,18 +9,18 @@ import Foundation
 
 struct RecommendationExtraObject: Codable {
     
-    public var phone: String
+    public var phone: String?
     
-    public var site: String
+    public var site: String?
     
-    public var email: String
+    public var email: String?
     
-    public var address: String
+    public var address: String?
     
-    public var instagram: String
+    public var instagram: String?
     
-    public var telegram: String
+    public var telegram: String?
     
-    public var files: [String]
+    public var files: [String]?
     
 }

@@ -38,6 +38,23 @@ class ClientData {
     public static var votes = IClientData<[VoteObject]>([])
     
     
+    public static func clearAll() {
+        documents = IClientData<[DocumentObject]>([])
+        faq = IClientData<[FaqObject]>([])
+        flats = IClientData<[FlatObject]>([])
+        house = IClientData<HouseObject>()
+        imChannels = IClientData<[IMChannelObject]>([])
+        imMessages = IClientData<[Int: [IMMessage]]>([:])
+        instructions = IClientData<[InstructionObject]>([])
+        invites = IClientData<[InviteObject]>([])
+        pinnedPosts = IClientData<[PostObject]>([])
+        posts = IClientData<[PostObject]>([])
+        recommendations = IClientData<[RecomendationObject]>([])
+        sections = IClientData<[Int: SectionObject]>([:])
+        user = IClientData<UserObject>()
+        votes = IClientData<[VoteObject]>([])
+    }
+    
     public static func setSections() {
         for item in flats.data {
             let persons = item.residents?.count ?? 0

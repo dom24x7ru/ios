@@ -76,6 +76,9 @@
 		479156582622E05E0008BF94 /* StatusObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479156572622E05E0008BF94 /* StatusObject.swift */; };
 		4792532C2619B3A200386493 /* TextFieldWithCounter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4792532B2619B3A200386493 /* TextFieldWithCounter.xib */; };
 		479253312619B56B00386493 /* TextFieldWithCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479253302619B56B00386493 /* TextFieldWithCounter.swift */; };
+		47ACDCB726B5263F005C4FD0 /* OtherProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACDCB626B5263F005C4FD0 /* OtherProfileCell.swift */; };
+		47ACDCBC26B52760005C4FD0 /* OtherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACDCBB26B52760005C4FD0 /* OtherDetailCell.swift */; };
+		47ACDCC126B5277B005C4FD0 /* OtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACDCC026B5277B005C4FD0 /* OtherCell.swift */; };
 		47B7877F2621C1FF0040D84D /* ConfirmSmsCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7877E2621C1FF0040D84D /* ConfirmSmsCodeViewController.swift */; };
 		47B7878A2621CC7D0040D84D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47B787892621CC7D0040D84D /* Home.storyboard */; };
 		47B787972621D6520040D84D /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B787962621D6520040D84D /* UIStoryboardExtension.swift */; };
@@ -194,6 +197,9 @@
 		479253302619B56B00386493 /* TextFieldWithCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithCounter.swift; sourceTree = "<group>"; };
 		47A722DD269DD1B00021163A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47A722DE269DD1B00021163A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignIn.storyboard; sourceTree = "<group>"; };
+		47ACDCB626B5263F005C4FD0 /* OtherProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileCell.swift; sourceTree = "<group>"; };
+		47ACDCBB26B52760005C4FD0 /* OtherDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDetailCell.swift; sourceTree = "<group>"; };
+		47ACDCC026B5277B005C4FD0 /* OtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCell.swift; sourceTree = "<group>"; };
 		47B7877E2621C1FF0040D84D /* ConfirmSmsCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSmsCodeViewController.swift; sourceTree = "<group>"; };
 		47B787892621CC7D0040D84D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		47B787962621D6520040D84D /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
@@ -289,6 +295,16 @@
 				47683E592629AFA600923701 /* User */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		472E517626B43ECE00D63BEC /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				47ACDCC026B5277B005C4FD0 /* OtherCell.swift */,
+				47ACDCBB26B52760005C4FD0 /* OtherDetailCell.swift */,
+				47ACDCB626B5263F005C4FD0 /* OtherProfileCell.swift */,
+			);
+			path = TableCells;
 			sourceTree = "<group>";
 		};
 		4734D417269596DC00D95B7C /* TableCells */ = {
@@ -564,6 +580,7 @@
 		47BB566D263AD78800A82F56 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				472E517626B43ECE00D63BEC /* TableCells */,
 				47117DEB262859900094A3B3 /* OtherViewController.swift */,
 			);
 			path = Other;
@@ -849,6 +866,7 @@
 				47CDA7E0265148BB00CEB512 /* HouseExtraObject.swift in Sources */,
 				4759301D26386D400029BA1B /* InviteObject.swift in Sources */,
 				4759301826386C4E0029BA1B /* ResidentOwnerObject.swift in Sources */,
+				47ACDCC126B5277B005C4FD0 /* OtherCell.swift in Sources */,
 				473EBB552677478F00C710C7 /* FaqCategoryObject.swift in Sources */,
 				47126944263AE1030085D5C6 /* DateFormatterExtension.swift in Sources */,
 				47B787972621D6520040D84D /* UIStoryboardExtension.swift in Sources */,
@@ -866,6 +884,7 @@
 				47117DE2262859600094A3B3 /* NeighborsViewController.swift in Sources */,
 				473F744A26985EAB00A55B20 /* NeighborsFlatCell.swift in Sources */,
 				47702603262EF869001D14D9 /* ThreadExtension.swift in Sources */,
+				47ACDCB726B5263F005C4FD0 /* OtherProfileCell.swift in Sources */,
 				47B787A72621E1AB0040D84D /* SignInWithInviteObject.swift in Sources */,
 				473EBB842677666100C710C7 /* VoteQuestionObject.swift in Sources */,
 				479156582622E05E0008BF94 /* StatusObject.swift in Sources */,
@@ -888,6 +907,7 @@
 				47117DEC262859900094A3B3 /* OtherViewController.swift in Sources */,
 				47EC85EF264282D00029957B /* UserAccessObject.swift in Sources */,
 				473EBBAE26776B9E00C710C7 /* IMChannelLastMessageObject.swift in Sources */,
+				47ACDCBC26B52760005C4FD0 /* OtherDetailCell.swift in Sources */,
 				47E19CA12618552900C34216 /* SocketHandler.swift in Sources */,
 				473EBB672677535B00C710C7 /* RecommendationExtraObject.swift in Sources */,
 				473F74282695D39000A55B20 /* FloorObject.swift in Sources */,

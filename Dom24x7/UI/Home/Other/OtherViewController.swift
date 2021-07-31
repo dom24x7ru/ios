@@ -95,6 +95,7 @@ class OtherViewController: UITableViewController, MDCAppBarNavigationControllerD
         
         if tableView.cellForRow(at: indexPath)!.reuseIdentifier == "OtherLogoutCell" {
             Preferences.clearAll()
+            ClientData.clearAll()
             
             UIApplication.shared.keyWindow!.rootViewController = UIStoryboard(name: "SignIn", bundle: nil).instantiateInitialViewController()
         }

@@ -43,6 +43,9 @@ class TextFieldWithCounter: UIView, UITextFieldDelegate {
     }
     
     private func viewDidLoad() {
+        textField.setNormalLabelColor(.systemGray, for: .normal)
+        textField.setFloatingLabelColor(.systemGray, for: .normal)
+        textField.setFloatingLabelColor(.accentColor, for: .editing)
         textField.setLeadingAssistiveLabelColor(.systemRed, for: .normal)
         textField.setTrailingAssistiveLabelColor(.systemGray, for: .normal)
         textField.setTrailingAssistiveLabelColor(.systemGray, for: .editing)

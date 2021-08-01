@@ -15,7 +15,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="kf3-fv-nH2" userLabel="TextFieldGroupView">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rgl-PZ-lWB" userLabel="TextField" customClass="MDCUnderlinedTextField">
@@ -34,13 +34,13 @@
             <viewLayoutGuide key="safeArea" id="lv2-Wg-YLQ"/>
             <constraints>
                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="8vv-lF-76f"/>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rgl-PZ-lWB" secondAttribute="bottom" id="XUP-6z-a9N"/>
+                <constraint firstAttribute="bottom" secondItem="rgl-PZ-lWB" secondAttribute="bottom" id="XUP-6z-a9N"/>
                 <constraint firstItem="rgl-PZ-lWB" firstAttribute="top" secondItem="kf3-fv-nH2" secondAttribute="top" id="hOf-Ef-PEr"/>
                 <constraint firstItem="rgl-PZ-lWB" firstAttribute="leading" secondItem="kf3-fv-nH2" secondAttribute="leading" id="jRY-xD-Bme"/>
                 <constraint firstAttribute="trailing" secondItem="rgl-PZ-lWB" secondAttribute="trailing" id="zTh-KZ-BWS"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="164" y="-407.0464767616192"/>
+            <point key="canvasLocation" x="164" y="-415.59220389805103"/>
         </view>
     </objects>
 </document>

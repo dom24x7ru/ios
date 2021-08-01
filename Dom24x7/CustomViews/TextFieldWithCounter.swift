@@ -49,14 +49,14 @@ class TextFieldWithCounter: UIView, UITextFieldDelegate {
     }
     
     private func viewDidLoad() {
-        textField.setUnderlineColor(.darkGray, for: .normal)
+        textField.setUnderlineColor(.systemGray, for: .normal)
         textField.setUnderlineColor(.accentColor, for: .editing)
         
         textField.delegate = self
         prefixLabel.text = String()
         errorMessageLabel.isHidden = true
         errorMessageLabel.text = String()
-        errorMessageLabel.textColor = .red
+        errorMessageLabel.textColor = .systemRed
     }
     
     // MARK: TextField Callbacks
@@ -74,8 +74,8 @@ class TextFieldWithCounter: UIView, UITextFieldDelegate {
         onTextFieldDidEndEditing?()
         
         if !isFilled {
-            lengthCounterLabel.textColor = .red
-            textField.setUnderlineColor(.red, for: .normal)
+            lengthCounterLabel.textColor = .systemRed
+            textField.setUnderlineColor(.systemRed, for: .normal)
         }
     }
     
@@ -88,18 +88,18 @@ class TextFieldWithCounter: UIView, UITextFieldDelegate {
     // MARK: Custom APIs
     
     public func hideError() {
+        lengthCounterLabel.textColor = .systemGray
         errorMessageLabel.isHidden = true
-        lengthCounterLabel.textColor = .darkGray
         
-        textField.setUnderlineColor(.darkGray, for: .normal)
+        textField.setUnderlineColor(.systemGray, for: .normal)
     }
     
     public func showError(message: String) {
-        lengthCounterLabel.textColor = .red
-        errorMessageLabel.text = message
+        lengthCounterLabel.textColor = .systemRed
         errorMessageLabel.isHidden = false
+        errorMessageLabel.text = message
         
-        textField.setUnderlineColor(.red, for: .normal)
+        textField.setUnderlineColor(.systemRed, for: .normal)
     }
     
 }

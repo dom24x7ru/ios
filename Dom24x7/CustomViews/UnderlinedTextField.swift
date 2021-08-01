@@ -1,5 +1,5 @@
 //
-//  TextFieldWithCounter.swift
+//  UnderlinedTextField.swift
 //  Dom24x7
 //
 //  Created by Alim Gershishev on 04.04.2021.
@@ -8,7 +8,7 @@
 import UIKit
 import MaterialComponents
 
-class TextFieldWithCounter: UIView, UITextFieldDelegate {
+class UnderlinedTextField: UIView, UITextFieldDelegate {
     
     public var contentView: UIView!
     @IBOutlet public var textField: MDCUnderlinedTextField!

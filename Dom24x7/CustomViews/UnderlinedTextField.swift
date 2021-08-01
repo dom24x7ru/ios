@@ -14,7 +14,7 @@ class UnderlinedTextField: UIView, UITextFieldDelegate {
     @IBOutlet public var textField: MDCUnderlinedTextField!
     
     public var isFilled: Bool {
-        return textField.text!.count == maxTextLength
+        return textField.text!.count == maxTextLength || maxTextLength == Int.max
     }
     
     public var maxTextLength: Int = Int.max {

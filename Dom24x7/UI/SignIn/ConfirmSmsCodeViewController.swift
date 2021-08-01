@@ -10,7 +10,7 @@ import MaterialComponents
 
 class ConfirmSmsCodeViewController: UIViewController {
     
-    @IBOutlet var smsCodeField: TextFieldWithCounter!
+    @IBOutlet var smsCodeField: UnderlinedTextField!
     @IBOutlet var submitButton: MDCRaisedButton!
     
     

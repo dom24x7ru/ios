@@ -10,7 +10,7 @@ import MaterialComponents
 
 class SignInViewController: UIViewController {
     
-    @IBOutlet var phoneNumberField: TextFieldWithCounter!
+    @IBOutlet var phoneNumberField: UnderlinedTextField!
     @IBOutlet var signInButton: MDCRaisedButton!
     @IBOutlet var separatorLabel: UILabel!
     @IBOutlet var registerButton: UIButton!

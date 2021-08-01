@@ -10,9 +10,9 @@ import MaterialComponents
 
 class RegisterViewController: UIViewController {
     
-    @IBOutlet var phoneNumberField: TextFieldWithCounter!
-    @IBOutlet var phoneNumberConfirmField: TextFieldWithCounter!
-    @IBOutlet var inviteCodeField: TextFieldWithCounter!
+    @IBOutlet var phoneNumberField: UnderlinedTextField!
+    @IBOutlet var phoneNumberConfirmField: UnderlinedTextField!
+    @IBOutlet var inviteCodeField: UnderlinedTextField!
     @IBOutlet var registerButton: MDCRaisedButton!
     @IBOutlet var separatorLabel: UILabel!
     @IBOutlet var signInButton: UIButton!

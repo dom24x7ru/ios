@@ -63,7 +63,7 @@ class OtherViewController: UITableViewController, MDCAppBarNavigationControllerD
         appBarViewController.navigationBar.titleTextColor = .white
     }
     
-    // MARK: - Table view data source
+    // MARK: Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ClientData.user.data == nil ? 0 : 8
@@ -101,7 +101,7 @@ class OtherViewController: UITableViewController, MDCAppBarNavigationControllerD
         }
     }
     
-    // MARK: - Custom cells
+    // MARK: Custom cells
     
     private func getProfileCell(at indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OtherProfileCell", for: indexPath) as! OtherProfileCell

@@ -44,7 +44,7 @@ class ChatsViewController: UITableViewController, MDCAppBarNavigationControllerD
         appBarViewController.navigationBar.titleTextColor = .white
     }
     
-    // MARK: - Table view data source
+    // MARK: Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ClientData.imChannels.data.count

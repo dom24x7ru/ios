@@ -39,7 +39,7 @@ class NeighborsFloorsViewController: UITableViewController {
         destination.flats = flats
     }
     
-    // MARK: - Table view data source
+    // MARK: Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return indexes.count

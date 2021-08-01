@@ -43,7 +43,7 @@ class FeedViewController: UITableViewController, MDCAppBarNavigationControllerDe
         appBarViewController.navigationBar.titleTextColor = .white
     }
     
-    // MARK: - Table view data source
+    // MARK: Table view data source
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()

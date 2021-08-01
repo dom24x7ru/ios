@@ -62,11 +62,11 @@ class SignInViewController: UIViewController {
 
     private func initializeComponents() {
         phoneNumberField.maxTextLength = 10
-        phoneNumberField.prefixLabel.text = "+7"
         phoneNumberField.textField.keyboardType = .numberPad
         phoneNumberField.textField.placeholder = Localization.yourPhoneNumber
         separatorLabel.text = "– " + Localization.or + " –"
 
+        phoneNumberField.setPrefixText("+7")
         signInButton.setTitle(Localization.signIn, for: .normal)
         registerButton.setTitle(Localization.register, for: .normal)
     }

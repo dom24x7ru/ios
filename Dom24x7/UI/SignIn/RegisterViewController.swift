@@ -82,7 +82,6 @@ class RegisterViewController: UIViewController {
     
     private func initializeComponents() {
         phoneNumberField.maxTextLength = 10
-        phoneNumberField.prefixLabel.text = "+7"
         phoneNumberField.textField.keyboardType = .numberPad
         phoneNumberField.textField.placeholder = Localization.yourPhoneNumber
         phoneNumberField.onTextFieldDidBeginEditing = {
@@ -90,7 +89,6 @@ class RegisterViewController: UIViewController {
         }
         
         phoneNumberConfirmField.maxTextLength = 10
-        phoneNumberConfirmField.prefixLabel.text = "+7"
         phoneNumberConfirmField.textField.keyboardType = .numberPad
         phoneNumberConfirmField.textField.placeholder = Localization.retypeYourPhoneNumber
         phoneNumberConfirmField.onTextFieldDidBeginEditing = {
@@ -102,6 +100,8 @@ class RegisterViewController: UIViewController {
         inviteCodeField.textField.placeholder = Localization.enterInviteCode
         separatorLabel.text = "– " + Localization.or + " –"
 
+        phoneNumberField.setPrefixText("+7")
+        phoneNumberConfirmField.setPrefixText("+7")
         registerButton.setTitle(Localization.register, for: .normal)
         signInButton.setTitle(Localization.signIn, for: .normal)
     }

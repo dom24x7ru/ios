@@ -5,15 +5,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldWithCounter" customModule="Dom24x7" customModuleProvider="target">
             <connections>
-                <outlet property="errorMessageLabel" destination="P8x-9o-yik" id="C4b-d0-Z2F"/>
-                <outlet property="lengthCounterLabel" destination="A7U-RM-lK0" id="F12-gC-bSF"/>
-                <outlet property="prefixLabel" destination="mvZ-Ht-Qcw" id="fh2-2E-ITR"/>
                 <outlet property="textField" destination="rgl-PZ-lWB" id="Ydj-lt-hj3"/>
             </connections>
         </placeholder>
@@ -23,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rgl-PZ-lWB" userLabel="TextField" customClass="MDCUnderlinedTextField">
-                    <rect key="frame" x="43.5" y="0.0" width="331.5" height="42"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="42" id="2ky-ZS-0Di"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" id="XYq-a5-XIP"/>
@@ -34,62 +30,17 @@
                         <action selector="textFieldEditingChanged:" destination="-1" eventType="editingChanged" id="Tnl-O5-ihY"/>
                     </connections>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="0/0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7U-RM-lK0" userLabel="LengthCounterLabel">
-                    <rect key="frame" x="355" y="44" width="20" height="16"/>
-                    <constraints>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="JJi-yc-TUX"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="qY4-JB-gqm"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" systemColor="systemGrayColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Error Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8x-9o-yik" userLabel="ErrorMessageLabel">
-                    <rect key="frame" x="43.5" y="44" width="82" height="16"/>
-                    <constraints>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="0zG-ZP-PXD"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="9g1-nq-al4"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" systemColor="systemGrayColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Prefix" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvZ-Ht-Qcw" userLabel="PrefixLabel">
-                    <rect key="frame" x="0.0" y="0.0" width="43.5" height="42"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="42" id="h5g-ei-FcV"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="kaf-Ke-u9H"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" systemColor="systemGrayColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="lv2-Wg-YLQ"/>
             <constraints>
-                <constraint firstItem="P8x-9o-yik" firstAttribute="leading" secondItem="mvZ-Ht-Qcw" secondAttribute="trailing" id="7vr-XO-pfM"/>
                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="8vv-lF-76f"/>
-                <constraint firstItem="A7U-RM-lK0" firstAttribute="top" secondItem="rgl-PZ-lWB" secondAttribute="bottom" constant="2" id="BU0-E2-gcm"/>
-                <constraint firstAttribute="bottom" secondItem="A7U-RM-lK0" secondAttribute="bottom" id="CVf-mf-lJF"/>
-                <constraint firstItem="mvZ-Ht-Qcw" firstAttribute="leading" secondItem="kf3-fv-nH2" secondAttribute="leading" id="Hyp-UH-1lT"/>
-                <constraint firstItem="P8x-9o-yik" firstAttribute="top" secondItem="rgl-PZ-lWB" secondAttribute="bottom" constant="2" id="MFr-rF-Vq9"/>
-                <constraint firstItem="A7U-RM-lK0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P8x-9o-yik" secondAttribute="trailing" constant="16" id="Scf-kF-CKB"/>
-                <constraint firstAttribute="trailing" secondItem="A7U-RM-lK0" secondAttribute="trailing" id="TDk-80-GmI"/>
-                <constraint firstItem="rgl-PZ-lWB" firstAttribute="leading" secondItem="mvZ-Ht-Qcw" secondAttribute="trailing" id="Urc-RI-T7w"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rgl-PZ-lWB" secondAttribute="bottom" id="XUP-6z-a9N"/>
                 <constraint firstItem="rgl-PZ-lWB" firstAttribute="top" secondItem="kf3-fv-nH2" secondAttribute="top" id="hOf-Ef-PEr"/>
-                <constraint firstItem="mvZ-Ht-Qcw" firstAttribute="top" secondItem="kf3-fv-nH2" secondAttribute="top" id="r88-V8-3PT"/>
-                <constraint firstAttribute="bottom" secondItem="P8x-9o-yik" secondAttribute="bottom" id="ur6-Vd-D3D"/>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mvZ-Ht-Qcw" secondAttribute="bottom" id="uxh-n4-cWH"/>
+                <constraint firstItem="rgl-PZ-lWB" firstAttribute="leading" secondItem="kf3-fv-nH2" secondAttribute="leading" id="jRY-xD-Bme"/>
                 <constraint firstAttribute="trailing" secondItem="rgl-PZ-lWB" secondAttribute="trailing" id="zTh-KZ-BWS"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="164" y="-407.0464767616192"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

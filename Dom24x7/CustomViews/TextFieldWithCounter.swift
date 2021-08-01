@@ -11,19 +11,13 @@ import MaterialComponents
 class TextFieldWithCounter: UIView, UITextFieldDelegate {
     
     public var contentView: UIView!
-    @IBOutlet public var prefixLabel: UILabel!
     @IBOutlet public var textField: MDCUnderlinedTextField!
-    @IBOutlet public var errorMessageLabel: UILabel!
-    @IBOutlet public var lengthCounterLabel: UILabel!
     
     public var isFilled: Bool {
         return textField.text!.count == maxTextLength
     }
     
     public var maxTextLength: Int = Int.max {
-        willSet {
-            lengthCounterLabel.isHidden = newValue == Int.max
-        }
         didSet {
             textFieldEditingChanged(textField)
         }
@@ -49,14 +43,13 @@ class TextFieldWithCounter: UIView, UITextFieldDelegate {
     }
     
     private func viewDidLoad() {
+        textField.setLeadingAssistiveLabelColor(.systemRed, for: .normal)
+        textField.setTrailingAssistiveLabelColor(.systemGray, for: .normal)
+        textField.setTrailingAssistiveLabelColor(.systemGray, for: .editing)
         textField.setUnderlineColor(.systemGray, for: .normal)
         textField.setUnderlineColor(.accentColor, for: .editing)
         
         textField.delegate = self
-        prefixLabel.text = String()
-        errorMessageLabel.isHidden = true
-        errorMessageLabel.text = String()
-        errorMessageLabel.textColor = .systemRed
     }
     
     // MARK: TextField Callbacks
@@ -74,32 +67,44 @@ class TextFieldWithCounter: UIView, UITextFieldDelegate {
         onTextFieldDidEndEditing?()
         
         if !isFilled {
-            lengthCounterLabel.textColor = .systemRed
+            textField.setTrailingAssistiveLabelColor(.systemRed, for: .normal)
             textField.setUnderlineColor(.systemRed, for: .normal)
         }
     }
     
-    @IBAction private func textFieldEditingChanged(_ sender: UITextField) {
-        if !lengthCounterLabel.isHidden {
-            lengthCounterLabel.text = String(textField.text!.count) + "/" + String(maxTextLength)
+    @IBAction private func textFieldEditingChanged(_ _: UITextField) {
+        if maxTextLength != Int.max {
+            textField.trailingAssistiveLabel.text = String(textField.text!.count) + "/" + String(maxTextLength)
         }
     }
     
     // MARK: Custom APIs
     
     public func hideError() {
-        lengthCounterLabel.textColor = .systemGray
-        errorMessageLabel.isHidden = true
+        textField.leadingAssistiveLabel.text = String()
         
+        textField.setTrailingAssistiveLabelColor(.systemGray, for: .normal)
         textField.setUnderlineColor(.systemGray, for: .normal)
     }
     
     public func showError(message: String) {
-        lengthCounterLabel.textColor = .systemRed
-        errorMessageLabel.isHidden = false
-        errorMessageLabel.text = message
+        textField.leadingAssistiveLabel.text = message
         
+        textField.setTrailingAssistiveLabelColor(.systemRed, for: .normal)
         textField.setUnderlineColor(.systemRed, for: .normal)
+    }
+    
+    public func setPrefixText(_ text: String) {
+        let label = UILabel()
+        
+        label.font = .systemFont(ofSize: 17)
+        label.text = text
+        label.textAlignment = .center
+        label.textColor = .systemGray
+        textField.leadingView = label
+        textField.leadingViewMode = .always
+        
+        label.sizeToFit()
     }
     
 }

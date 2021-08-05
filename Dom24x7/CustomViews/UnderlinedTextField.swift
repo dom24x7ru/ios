@@ -46,7 +46,7 @@ class UnderlinedTextField: UIView, UITextFieldDelegate {
         textField.setNormalLabelColor(.systemGray, for: .normal)
         textField.setFloatingLabelColor(.systemGray, for: .normal)
         textField.setFloatingLabelColor(.accentColor, for: .editing)
-        textField.setLeadingAssistiveLabelColor(.systemRed, for: .normal)
+        textField.setLeadingAssistiveLabelColor(.systemGray, for: .normal)
         textField.setTrailingAssistiveLabelColor(.systemGray, for: .normal)
         textField.setTrailingAssistiveLabelColor(.systemGray, for: .editing)
         textField.setUnderlineColor(.systemGray, for: .normal)
@@ -93,8 +93,19 @@ class UnderlinedTextField: UIView, UITextFieldDelegate {
     public func showError(message: String) {
         textField.leadingAssistiveLabel.text = message
         
+        textField.setLeadingAssistiveLabelColor(.systemRed, for: .normal)
         textField.setTrailingAssistiveLabelColor(.systemRed, for: .normal)
         textField.setUnderlineColor(.systemRed, for: .normal)
+    }
+    
+    public func hideMessage() {
+        textField.leadingAssistiveLabel.text = String()
+    }
+    
+    public func showMessage(message: String) {
+        textField.leadingAssistiveLabel.text = message
+        
+        textField.setLeadingAssistiveLabelColor(.systemGray, for: .normal)
     }
     
     public func setPrefixText(_ text: String) {

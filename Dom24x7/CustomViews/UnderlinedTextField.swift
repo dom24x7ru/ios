@@ -24,7 +24,12 @@ class UnderlinedTextField: UIView, UITextFieldDelegate {
     }
     
     public var text: String {
-        return textField.text!
+        get {
+            return textField.text!
+        }
+        set {
+            textField.text = newValue
+        }
     }
     
     public var onTextFieldDidBeginEditing: Runnable?

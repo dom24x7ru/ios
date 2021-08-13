@@ -31,6 +31,8 @@ struct PersonObject: Codable {
     
     public var telegram: String?
     
+    public var flat: Int?
+    
     public var access: UserAccessObject
     
 }

@@ -225,6 +225,31 @@ class SocketHandler {
         })
     }
     
+    public static func saveProfile(_ user: UserObject, then handler: @escaping ResultHandler) {
+        var profile: [String: AnyObject] = [:]
+        
+        profile["surname"] = user.person!.surname as AnyObject
+        profile["name"] = user.person!.name as AnyObject
+        profile["midname"] = user.person!.midname as AnyObject
+        profile["telegram"] = user.person!.telegram as AnyObject
+        profile["flat"] = user.resident!.flat.number as AnyObject
+        profile["access"] = user.person!.access as AnyObject
+        
+        client.emitAck(eventName: "user.saveProfile", data: profile as AnyObject, ack: { (_: String, errorObj: AnyObject?, dataObj: AnyObject?) in
+            if errorObj != nil && !(errorObj is NSNull) {
+                let error = JSONDecoder.decode(ErrorObject.self, from: errorObj)
+
+                handler(.failure(error))
+            } else if dataObj != nil {
+                let response = JSONDecoder.decode(StatusObject.self, from: dataObj)
+                
+                handler(.success(response))
+            } else {
+                handler(.failure(ErrorObject(code: "0", message: Localization.unknownError)))
+            }
+        })
+    }
+    
     public static func signIn(phoneNumber: String, then handler: @escaping ResultHandler) {
         let data = SignInWithInviteObject(mobile: "7" + phoneNumber, invite: nil)
         

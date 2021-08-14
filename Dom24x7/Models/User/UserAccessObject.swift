@@ -6,13 +6,16 @@
 //
 
 import Foundation
+import HandyJSON
 
-struct UserAccessObject: Codable {
+class UserAccessObject: HandyJSON, Codable {
     
-    public var name: AccessObject
+    public var name: AccessObject!
     
-    public var mobile: AccessObject
+    public var mobile: AccessObject!
     
-    public var telegram: AccessObject
+    public var telegram: AccessObject!
+    
+    required init() { }
     
 }

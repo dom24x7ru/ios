@@ -6,11 +6,14 @@
 //
 
 import Foundation
+import HandyJSON
 
-struct AccessObject: Codable {
-    
-    public var level: String
+class AccessObject: HandyJSON, Codable {
+
+    public var level: String!
     
     public var format: String?
+    
+    required init() { }
     
 }

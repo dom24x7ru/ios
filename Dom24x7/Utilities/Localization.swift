@@ -13,6 +13,7 @@ class Localization {
     public static var available: String!
     public static var chats: String!
     public static var documents: String!
+    public static var error: String!
     public static var faq: String!
     public static var feed: String!
     public static var flat: String!
@@ -61,6 +62,7 @@ class Localization {
     public static var showTelegramAccount: String!
     public static var smsCode: String!
     public static var squareMeter: String!
+    public static var successfullySaved: String!
     public static var telegramAccount: String!
     public static var unknownError: String!
     public static var yourPhoneNumber: String!
@@ -79,6 +81,7 @@ class Localization {
         available = "Доступно"
         chats = "Чаты"
         documents = "Документы"
+        error = "Ошибка"
         faq = "Вопросы-Ответы"
         feed = "Лента"
         flat = "Квартира"
@@ -127,6 +130,7 @@ class Localization {
         showTelegramAccount = "Показывать telegram аккаунт (если указан)"
         smsCode = "СМС код"
         squareMeter = "кв.м."
+        successfullySaved = "Успешно сохранили"
         telegramAccount = "Аккаунт в Telegram"
         unknownError = "Неизвестная ошибка"
         yourPhoneNumber = "Ваш номер телефона"

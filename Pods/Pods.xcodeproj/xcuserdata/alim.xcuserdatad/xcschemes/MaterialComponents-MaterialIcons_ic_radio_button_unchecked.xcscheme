@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1240"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "95C45FB9B5032C03C4C44DCCF7FE8F51"
+               BlueprintIdentifier = "12C99E6E2602880AA596EC9495B15625"
                BuildableName = "MaterialIcons_ic_radio_button_unchecked.bundle"
                BlueprintName = "MaterialComponents-MaterialIcons_ic_radio_button_unchecked"
                ReferencedContainer = "container:Pods.xcodeproj">

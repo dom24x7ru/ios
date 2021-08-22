@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1240"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2DF8DFA4D72FA8C07652E74608ACDDF8"
+               BlueprintIdentifier = "01AB46F38FB2F64DB57858D3CBD6D39D"
                BuildableName = "MaterialIcons_ic_check_circle.bundle"
                BlueprintName = "MaterialComponents-MaterialIcons_ic_check_circle"
                ReferencedContainer = "container:Pods.xcodeproj">

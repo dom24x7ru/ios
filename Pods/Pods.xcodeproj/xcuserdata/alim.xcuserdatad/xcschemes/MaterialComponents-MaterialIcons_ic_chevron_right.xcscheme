@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1240"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDEDD24FD96F361058D154845E9CFA2C"
+               BlueprintIdentifier = "E57CF3A6ACB62F8C92575049826C9A7A"
                BuildableName = "MaterialIcons_ic_chevron_right.bundle"
                BlueprintName = "MaterialComponents-MaterialIcons_ic_chevron_right"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -74,8 +74,9 @@
 		4791564E2622DE5F0008BF94 /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4791564D2622DE5F0008BF94 /* JSONDecoderExtension.swift */; };
 		479156532622E0350008BF94 /* ErrorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479156522622E0350008BF94 /* ErrorObject.swift */; };
 		479156582622E05E0008BF94 /* StatusObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479156572622E05E0008BF94 /* StatusObject.swift */; };
-		4792532C2619B3A200386493 /* TextFieldWithCounter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4792532B2619B3A200386493 /* TextFieldWithCounter.xib */; };
-		479253312619B56B00386493 /* TextFieldWithCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479253302619B56B00386493 /* TextFieldWithCounter.swift */; };
+		4792532C2619B3A200386493 /* UnderlinedTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4792532B2619B3A200386493 /* UnderlinedTextField.xib */; };
+		479253312619B56B00386493 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479253302619B56B00386493 /* UnderlinedTextField.swift */; };
+		47ABE81526B6A2FA00489B46 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE81426B6A2FA00489B46 /* ProfileViewController.swift */; };
 		47ACDCB726B5263F005C4FD0 /* OtherProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACDCB626B5263F005C4FD0 /* OtherProfileCell.swift */; };
 		47ACDCBC26B52760005C4FD0 /* OtherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACDCBB26B52760005C4FD0 /* OtherDetailCell.swift */; };
 		47ACDCC126B5277B005C4FD0 /* OtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACDCC026B5277B005C4FD0 /* OtherCell.swift */; };
@@ -193,10 +194,11 @@
 		4791564D2622DE5F0008BF94 /* JSONDecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtension.swift; sourceTree = "<group>"; };
 		479156522622E0350008BF94 /* ErrorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorObject.swift; sourceTree = "<group>"; };
 		479156572622E05E0008BF94 /* StatusObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusObject.swift; sourceTree = "<group>"; };
-		4792532B2619B3A200386493 /* TextFieldWithCounter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldWithCounter.xib; sourceTree = "<group>"; };
-		479253302619B56B00386493 /* TextFieldWithCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithCounter.swift; sourceTree = "<group>"; };
+		4792532B2619B3A200386493 /* UnderlinedTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnderlinedTextField.xib; sourceTree = "<group>"; };
+		479253302619B56B00386493 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 		47A722DD269DD1B00021163A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47A722DE269DD1B00021163A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignIn.storyboard; sourceTree = "<group>"; };
+		47ABE81426B6A2FA00489B46 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		47ACDCB626B5263F005C4FD0 /* OtherProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileCell.swift; sourceTree = "<group>"; };
 		47ACDCBB26B52760005C4FD0 /* OtherDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDetailCell.swift; sourceTree = "<group>"; };
 		47ACDCC026B5277B005C4FD0 /* OtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCell.swift; sourceTree = "<group>"; };
@@ -324,7 +326,7 @@
 				4792532A2619B34A00386493 /* XIBs */,
 				476D15D8269A11A400F57522 /* BackgroundText.swift */,
 				47D31C472691980400FFA253 /* LoadingBar.swift */,
-				479253302619B56B00386493 /* TextFieldWithCounter.swift */,
+				479253302619B56B00386493 /* UnderlinedTextField.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -385,9 +387,9 @@
 				476282AB261B555200D6919A /* Global.swift */,
 				4791564D2622DE5F0008BF94 /* JSONDecoderExtension.swift */,
 				477025FA262EE1FA001D14D9 /* JSONEncoderExtension.swift */,
+				473EBB4A2677431C00C710C7 /* ScClientExtension.swift */,
 				47702602262EF869001D14D9 /* ThreadExtension.swift */,
 				47B787962621D6520040D84D /* UIStoryboardExtension.swift */,
-				473EBB4A2677431C00C710C7 /* ScClientExtension.swift */,
 				47D31C4C2691990600FFA253 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
@@ -486,7 +488,7 @@
 		4792532A2619B34A00386493 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				4792532B2619B3A200386493 /* TextFieldWithCounter.xib */,
+				4792532B2619B3A200386493 /* UnderlinedTextField.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -582,6 +584,7 @@
 			children = (
 				472E517626B43ECE00D63BEC /* TableCells */,
 				47117DEB262859900094A3B3 /* OtherViewController.swift */,
+				47ABE81426B6A2FA00489B46 /* ProfileViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -724,7 +727,7 @@
 				478F38D4261235690024CC3F /* LaunchScreen.storyboard in Resources */,
 				47B7878A2621CC7D0040D84D /* Home.storyboard in Resources */,
 				478F38D1261235690024CC3F /* Assets.xcassets in Resources */,
-				4792532C2619B3A200386493 /* TextFieldWithCounter.xib in Resources */,
+				4792532C2619B3A200386493 /* UnderlinedTextField.xib in Resources */,
 				478F38CC261235680024CC3F /* SignIn.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -857,6 +860,7 @@
 				472A267F261714180043AABB /* Colors.swift in Sources */,
 				473EBB8E2677670500C710C7 /* VoteObject.swift in Sources */,
 				47EC85E226427D7D0029957B /* ResidentObject.swift in Sources */,
+				47ABE81526B6A2FA00489B46 /* ProfileViewController.swift in Sources */,
 				473EBB4B2677431C00C710C7 /* ScClientExtension.swift in Sources */,
 				473F74332697478100A55B20 /* NeighborsFloorsViewController.swift in Sources */,
 				473F744026983F9100A55B20 /* NeighborsFloorCell.swift in Sources */,
@@ -872,7 +876,7 @@
 				47B787972621D6520040D84D /* UIStoryboardExtension.swift in Sources */,
 				47593032263874B40029BA1B /* ClientData.swift in Sources */,
 				473EBB622677530C00C710C7 /* RecomendationObject.swift in Sources */,
-				479253312619B56B00386493 /* TextFieldWithCounter.swift in Sources */,
+				479253312619B56B00386493 /* UnderlinedTextField.swift in Sources */,
 				47683E682629B26A00923701 /* Preferences.swift in Sources */,
 				47CDA7DB265148A600CEB512 /* HouseObject.swift in Sources */,
 				473EBB9426776A2E00C710C7 /* IMHistoryItemObject.swift in Sources */,

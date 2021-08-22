@@ -1,5 +1,7 @@
 platform :ios, '12.1'
 
+inhibit_all_warnings!
+
 target 'Dom24x7' do
   use_frameworks!
 

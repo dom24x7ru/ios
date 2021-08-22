@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1240"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50280455BACC24FACA9B46B5BBBE1B6F"
+               BlueprintIdentifier = "4788E963F4D40B8A9A85AADC41AB70D4"
                BuildableName = "MaterialIcons_ic_color_lens.bundle"
                BlueprintName = "MaterialComponents-MaterialIcons_ic_color_lens"
                ReferencedContainer = "container:Pods.xcodeproj">
